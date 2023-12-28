@@ -51,7 +51,7 @@ SELECT * FROM passengers_on_flights WHERE ROUTE_ID=4;
 -- 12.	 For the route ID 4, write a query to view the execution plan of the passengers_on_flights table.
  SELECT * FROM `passengers_on_flights` WHERE route_id=4;
 
- -- (13).	Write a query to create a view with only business class customers along with the brand of airlines.
+ -- (13).Write a query to create a view with only business class customers along with the brand of airlines.
 CREATE VIEW Bussiness_Class AS
 SELECT customer_id,brand FROM `ticket_details` WHERE class_id='Bussiness';
 SELECT * FROM Bussiness_Class;
